@@ -66,6 +66,6 @@ if __name__ == "__main__":
         
         train_loss = MSE(network.predict(np.array(inputs_).T), np.array(correct_predictions))
 
-        sys.stdout.write("\\rProgress: {}, Training loss: {}".format(str(100 * e/float(epochs))[:4], str(train_loss)[:5]))
+        sys.stdout.write("\rProgress: {}, Training loss: {}".format(str(100 * e/float(epochs))[:4], str(train_loss)[:5]))
         
 
